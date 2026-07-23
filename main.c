@@ -2,6 +2,7 @@
 
 char *ft_strcpy(char *dest, const char* src);
 size_t ft_strlen(const char *str);
+int strcmp(const char *s1, const char *s2);
 
 int	ft_strcmp(const char *s1, const char *s2)
 {
@@ -37,39 +38,41 @@ int	main(int argc, char **argv)
 		return (0);
 	}
 
-	// else if(ft_strcmp(argv[1], "ft_strcmp") == 0)
+	else if(ft_strcmp(argv[1], "ft_strcmp") == 0)
+	{
+		printf("%d\n", ft_strcmp("hello", "hello"));
+		return (0);
+	}
+
+	// else if(ft_write(argv[1], "ft_write") == 0)
 	// {
 	// }
 
-	// else if(ft_strcmp(argv[1], "ft_write") == 0)
+	// else if(ft_read(argv[1], "ft_read") == 0)
 	// {
 	// }
 
-	// else if(ft_strcmp(argv[1], "ft_read") == 0)
+	// else if(ft_strdup(argv[1], "ft_strdup") == 0)
 	// {
 	// }
 
-	// else if(ft_strcmp(argv[1], "ft_strdup") == 0)
+	// else if(ft_atoi_base(argv[1], "ft_atoi_base") == 0)
 	// {
 	// }
 
-	// else if(ft_strcmp(argv[1], "ft_atoi_base") == 0)
+	// else if(ft_list_push_front(argv[1], "ft_list_push_front") == 0)
 	// {
 	// }
 
-	// else if(ft_strcmp(argv[1], "ft_list_push_front") == 0)
+	// else if(ft_list_size(argv[1], "ft_list_size") == 0)
 	// {
 	// }
 
-	// else if(ft_strcmp(argv[1], "ft_list_size") == 0)
+	// else if(ft_list_sort(argv[1], "ft_list_sort") == 0)
 	// {
 	// }
 
-	// else if(ft_strcmp(argv[1], "ft_list_sort") == 0)
-	// {
-	// }
-
-	// else if(ft_strcmp(argv[1], "ft_list_remove_if") == 0)
+	// else if(ft_list_remove_if(argv[1], "ft_list_remove_if") == 0)
 	// {
 	// }
 
