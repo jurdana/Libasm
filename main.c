@@ -1,8 +1,10 @@
 #include <stdio.h>
+#include <unistd.h>
 
 char *ft_strcpy(char *dest, const char* src);
 size_t ft_strlen(const char *str);
 int strcmp(const char *s1, const char *s2);
+ssize_t ft_write(int fd, const void *buf, size_t count);
 
 int	ft_strcmp(const char *s1, const char *s2)
 {
@@ -44,35 +46,38 @@ int	main(int argc, char **argv)
 		return (0);
 	}
 
-	// else if(ft_write(argv[1], "ft_write") == 0)
+	else if(ft_strcmp(argv[1], "ft_write") == 0)
+	{
+		printf("%zd\n", ft_write(1, "hello", 5));
+		printf("%ld\n", write(1, "hello", 5));
+		return (0);
+	}
+
+	// else if(ft_strcmp(argv[1], "ft_read") == 0)
 	// {
 	// }
 
-	// else if(ft_read(argv[1], "ft_read") == 0)
+	// else if(ft_strcmp(argv[1], "ft_strdup") == 0)
 	// {
 	// }
 
-	// else if(ft_strdup(argv[1], "ft_strdup") == 0)
+	// else if(ft_strcmp(argv[1], "ft_atoi_base") == 0)
 	// {
 	// }
 
-	// else if(ft_atoi_base(argv[1], "ft_atoi_base") == 0)
+	// else if(ft_strcmp(argv[1], "ft_list_push_front") == 0)
 	// {
 	// }
 
-	// else if(ft_list_push_front(argv[1], "ft_list_push_front") == 0)
+	// else if(ft_strcmp(argv[1], "ft_list_size") == 0)
 	// {
 	// }
 
-	// else if(ft_list_size(argv[1], "ft_list_size") == 0)
+	// else if(ft_strcmp(argv[1], "ft_list_sort") == 0)
 	// {
 	// }
 
-	// else if(ft_list_sort(argv[1], "ft_list_sort") == 0)
-	// {
-	// }
-
-	// else if(ft_list_remove_if(argv[1], "ft_list_remove_if") == 0)
+	// else if(ft_strcmp(argv[1], "ft_list_remove_if") == 0)
 	// {
 	// }
 
