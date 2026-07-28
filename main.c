@@ -5,6 +5,8 @@ char *ft_strcpy(char *dest, const char* src);
 size_t ft_strlen(const char *str);
 int strcmp(const char *s1, const char *s2);
 ssize_t ft_write(int fd, const void *buf, size_t count);
+ssize_t ft_read(int fd, void *buf, size_t count);
+char *ft_strdup(const char *s);
 
 int	ft_strcmp(const char *s1, const char *s2)
 {
@@ -53,13 +55,19 @@ int	main(int argc, char **argv)
 		return (0);
 	}
 
-	// else if(ft_strcmp(argv[1], "ft_read") == 0)
-	// {
-	// }
+	else if(ft_strcmp(argv[1], "ft_read") == 0)
+	{
+		char dest[20];
+		printf("%zd\n", ft_read(0, dest, 20));
+		return (0);
+	}
 
-	// else if(ft_strcmp(argv[1], "ft_strdup") == 0)
-	// {
-	// }
+	else if(ft_strcmp(argv[1], "ft_strdup") == 0)
+	{
+		char *dest = "awd";
+		printf("%s\n", ft_strdup(dest));
+		return (0);
+	}
 
 	// else if(ft_strcmp(argv[1], "ft_atoi_base") == 0)
 	// {
